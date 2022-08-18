@@ -1,0 +1,4085 @@
+[
+  {
+    "type": "advancement_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "remaining_string",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attribute",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attribute_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "brigadier:double",
+          "named": true
+        },
+        {
+          "type": "literal_string",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:uuid",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ban-ip_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:message",
+          "named": true
+        },
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ban_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:game_profile",
+          "named": true
+        },
+        {
+          "type": "minecraft:message",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "banlist_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {
+      "block": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "resource_location",
+            "named": true
+          }
+        ]
+      },
+      "nbt": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "snbt_compound",
+            "named": true
+          }
+        ]
+      },
+      "states": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "block_states",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "block_state_pair",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "literal_string",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "literal_string",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "block_states",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block_state_pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bossbar_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:bool",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:component",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "brigadier:bool",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "false",
+          "named": true
+        },
+        {
+          "type": "true",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "brigadier:double",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "brigadier:float",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "brigadier:integer",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "clear_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_predicate",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "clone_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_predicate",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cmd_line",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "advancement_cmd",
+          "named": true
+        },
+        {
+          "type": "attribute_cmd",
+          "named": true
+        },
+        {
+          "type": "ban-ip_cmd",
+          "named": true
+        },
+        {
+          "type": "ban_cmd",
+          "named": true
+        },
+        {
+          "type": "banlist_cmd",
+          "named": true
+        },
+        {
+          "type": "bossbar_cmd",
+          "named": true
+        },
+        {
+          "type": "clear_cmd",
+          "named": true
+        },
+        {
+          "type": "clone_cmd",
+          "named": true
+        },
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "data_cmd",
+          "named": true
+        },
+        {
+          "type": "datapack_cmd",
+          "named": true
+        },
+        {
+          "type": "debug_cmd",
+          "named": true
+        },
+        {
+          "type": "defaultgamemode_cmd",
+          "named": true
+        },
+        {
+          "type": "deop_cmd",
+          "named": true
+        },
+        {
+          "type": "difficulty_cmd",
+          "named": true
+        },
+        {
+          "type": "effect_cmd",
+          "named": true
+        },
+        {
+          "type": "enchant_cmd",
+          "named": true
+        },
+        {
+          "type": "execute_cmd",
+          "named": true
+        },
+        {
+          "type": "experience_cmd",
+          "named": true
+        },
+        {
+          "type": "fill_cmd",
+          "named": true
+        },
+        {
+          "type": "forceload_cmd",
+          "named": true
+        },
+        {
+          "type": "function_cmd",
+          "named": true
+        },
+        {
+          "type": "gamemode_cmd",
+          "named": true
+        },
+        {
+          "type": "gamerule_cmd",
+          "named": true
+        },
+        {
+          "type": "give_cmd",
+          "named": true
+        },
+        {
+          "type": "help_cmd",
+          "named": true
+        },
+        {
+          "type": "item_cmd",
+          "named": true
+        },
+        {
+          "type": "jfr_cmd",
+          "named": true
+        },
+        {
+          "type": "kick_cmd",
+          "named": true
+        },
+        {
+          "type": "kill_cmd",
+          "named": true
+        },
+        {
+          "type": "list_cmd",
+          "named": true
+        },
+        {
+          "type": "locate_cmd",
+          "named": true
+        },
+        {
+          "type": "loot_cmd",
+          "named": true
+        },
+        {
+          "type": "me_cmd",
+          "named": true
+        },
+        {
+          "type": "msg_cmd",
+          "named": true
+        },
+        {
+          "type": "op_cmd",
+          "named": true
+        },
+        {
+          "type": "pardon-ip_cmd",
+          "named": true
+        },
+        {
+          "type": "pardon_cmd",
+          "named": true
+        },
+        {
+          "type": "particle_cmd",
+          "named": true
+        },
+        {
+          "type": "perf_cmd",
+          "named": true
+        },
+        {
+          "type": "place_cmd",
+          "named": true
+        },
+        {
+          "type": "playsound_cmd",
+          "named": true
+        },
+        {
+          "type": "publish_cmd",
+          "named": true
+        },
+        {
+          "type": "recipe_cmd",
+          "named": true
+        },
+        {
+          "type": "save-all_cmd",
+          "named": true
+        },
+        {
+          "type": "say_cmd",
+          "named": true
+        },
+        {
+          "type": "schedule_cmd",
+          "named": true
+        },
+        {
+          "type": "scoreboard_cmd",
+          "named": true
+        },
+        {
+          "type": "setblock_cmd",
+          "named": true
+        },
+        {
+          "type": "setidletimeout_cmd",
+          "named": true
+        },
+        {
+          "type": "setworldspawn_cmd",
+          "named": true
+        },
+        {
+          "type": "spawnpoint_cmd",
+          "named": true
+        },
+        {
+          "type": "spectate_cmd",
+          "named": true
+        },
+        {
+          "type": "spreadplayers_cmd",
+          "named": true
+        },
+        {
+          "type": "stopsound_cmd",
+          "named": true
+        },
+        {
+          "type": "summon_cmd",
+          "named": true
+        },
+        {
+          "type": "tag_cmd",
+          "named": true
+        },
+        {
+          "type": "team_cmd",
+          "named": true
+        },
+        {
+          "type": "teammsg_cmd",
+          "named": true
+        },
+        {
+          "type": "teleport_cmd",
+          "named": true
+        },
+        {
+          "type": "tellraw_cmd",
+          "named": true
+        },
+        {
+          "type": "time_cmd",
+          "named": true
+        },
+        {
+          "type": "title_cmd",
+          "named": true
+        },
+        {
+          "type": "trigger_cmd",
+          "named": true
+        },
+        {
+          "type": "weather_cmd",
+          "named": true
+        },
+        {
+          "type": "whitelist_cmd",
+          "named": true
+        },
+        {
+          "type": "worldborder_cmd",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "color",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "comment",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "component",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "json_array",
+          "named": true
+        },
+        {
+          "type": "json_false",
+          "named": true
+        },
+        {
+          "type": "json_null",
+          "named": true
+        },
+        {
+          "type": "json_number",
+          "named": true
+        },
+        {
+          "type": "json_object",
+          "named": true
+        },
+        {
+          "type": "json_string",
+          "named": true
+        },
+        {
+          "type": "json_true",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "data_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:double",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:nbt_compound_tag",
+          "named": true
+        },
+        {
+          "type": "minecraft:nbt_path",
+          "named": true
+        },
+        {
+          "type": "minecraft:nbt_tag",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "datapack_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "debug_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:function",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "defaultgamemode_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "deop_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:game_profile",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "difficulty_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "effect_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:bool",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:mob_effect",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enchant_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_enchantment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "entity",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "entity_variable",
+          "named": true
+        },
+        {
+          "type": "player_name",
+          "named": true
+        },
+        {
+          "type": "uuid",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "entity_argument",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "entity_argument_pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "entity_argument_advancements",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "key",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": "=",
+            "named": false
+          },
+          {
+            "type": "false",
+            "named": true
+          },
+          {
+            "type": "key",
+            "named": true
+          },
+          {
+            "type": "true",
+            "named": true
+          },
+          {
+            "type": "{",
+            "named": false
+          },
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "entity_argument_pair",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "entity_var_key",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "!",
+            "named": false
+          },
+          {
+            "type": "#",
+            "named": false
+          },
+          {
+            "type": "adventure",
+            "named": false
+          },
+          {
+            "type": "arbitrary",
+            "named": false
+          },
+          {
+            "type": "creative",
+            "named": false
+          },
+          {
+            "type": "decimal",
+            "named": true
+          },
+          {
+            "type": "entity_argument_advancements",
+            "named": true
+          },
+          {
+            "type": "entity_argument_scores",
+            "named": true
+          },
+          {
+            "type": "float_range",
+            "named": true
+          },
+          {
+            "type": "furthest",
+            "named": false
+          },
+          {
+            "type": "int_range",
+            "named": true
+          },
+          {
+            "type": "integer",
+            "named": true
+          },
+          {
+            "type": "literal_string",
+            "named": true
+          },
+          {
+            "type": "nearest",
+            "named": false
+          },
+          {
+            "type": "quoted_string",
+            "named": true
+          },
+          {
+            "type": "random",
+            "named": false
+          },
+          {
+            "type": "resource_location",
+            "named": true
+          },
+          {
+            "type": "snbt_compound",
+            "named": true
+          },
+          {
+            "type": "spectator",
+            "named": false
+          },
+          {
+            "type": "survival",
+            "named": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "entity_argument_scores",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "key",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "int_range",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "entity_var_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "entity_variable",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "entity_argument",
+          "named": true
+        },
+        {
+          "type": "entity_var_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "escape_sequence",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "execute_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:double",
+          "named": true
+        },
+        {
+          "type": "cmd_line",
+          "named": true
+        },
+        {
+          "type": "execute_cmd",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_predicate",
+          "named": true
+        },
+        {
+          "type": "minecraft:dimension",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity_anchor",
+          "named": true
+        },
+        {
+          "type": "minecraft:int_range",
+          "named": true
+        },
+        {
+          "type": "minecraft:nbt_path",
+          "named": true
+        },
+        {
+          "type": "minecraft:objective",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "minecraft:rotation",
+          "named": true
+        },
+        {
+          "type": "minecraft:score_holder",
+          "named": true
+        },
+        {
+          "type": "minecraft:swizzle",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec3",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "experience_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "false",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "cmd_line",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fill_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_predicate",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_state",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "float_axis",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "decimal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "float_range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "decimal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "forceload_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:column_pos",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:function",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gamemode_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gamerule_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:bool",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "give_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_stack",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "help_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "remaining_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "id",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "int_axis",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "int_range",
+    "named": true,
+    "fields": {
+      "max": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "integer",
+            "named": true
+          }
+        ]
+      },
+      "min": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "integer",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "item",
+    "named": true,
+    "fields": {
+      "item": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "resource_location",
+            "named": true
+          }
+        ]
+      },
+      "nbt": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "snbt_compound",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "item_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_slot",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_stack",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "jfr_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "json_array",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "json_array",
+          "named": true
+        },
+        {
+          "type": "json_false",
+          "named": true
+        },
+        {
+          "type": "json_null",
+          "named": true
+        },
+        {
+          "type": "json_number",
+          "named": true
+        },
+        {
+          "type": "json_object",
+          "named": true
+        },
+        {
+          "type": "json_string",
+          "named": true
+        },
+        {
+          "type": "json_true",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "json_false",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "json_number",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "json_object",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "json_pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "json_pair",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "json_string",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "json_array",
+            "named": true
+          },
+          {
+            "type": "json_false",
+            "named": true
+          },
+          {
+            "type": "json_null",
+            "named": true
+          },
+          {
+            "type": "json_number",
+            "named": true
+          },
+          {
+            "type": "json_object",
+            "named": true
+          },
+          {
+            "type": "json_string",
+            "named": true
+          },
+          {
+            "type": "json_true",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "json_string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "string_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "json_true",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "kick_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:message",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "kill_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "list_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "literal_string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "locate_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:resource_or_tag",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "loot_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_slot",
+          "named": true
+        },
+        {
+          "type": "minecraft:item_stack",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec3",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "me_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:message",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:angle",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "decimal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:block_pos",
+    "named": true,
+    "fields": {
+      "x": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      },
+      "y": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      },
+      "z": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "minecraft:block_predicate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:block_state",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:color",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "color",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:column_pos",
+    "named": true,
+    "fields": {
+      "x": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_axis",
+            "named": true
+          }
+        ]
+      },
+      "y": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "int_axis",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "minecraft:component",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "component",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:dimension",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:entity",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:entity_anchor",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "minecraft:entity_summon",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:function",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "function",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:game_profile",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:int_range",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "int_range",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:item_enchantment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:item_predicate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "item",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:item_slot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:item_stack",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "item",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:message",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "remaining_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:mob_effect",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:nbt_compound_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "snbt_compound",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:nbt_path",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "nbt_path",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:nbt_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        },
+        {
+          "type": "snbt_array",
+          "named": true
+        },
+        {
+          "type": "snbt_compound",
+          "named": true
+        },
+        {
+          "type": "snbt_false",
+          "named": true
+        },
+        {
+          "type": "snbt_list",
+          "named": true
+        },
+        {
+          "type": "snbt_number",
+          "named": true
+        },
+        {
+          "type": "snbt_true",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:objective",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "objective",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:operation",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "operation",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:particle",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "block_states",
+          "named": true
+        },
+        {
+          "type": "decimal",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "item",
+          "named": true
+        },
+        {
+          "type": "resource_location",
+          "named": true
+        },
+        {
+          "type": "vec3",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:resource",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:resource_location",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:resource_or_tag",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "resource_location",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:rotation",
+    "named": true,
+    "fields": {
+      "pitch": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "rot_axis",
+            "named": true
+          }
+        ]
+      },
+      "yaw": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "rot_axis",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "minecraft:score_holder",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:scoreboard_slot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "color",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:swizzle",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "minecraft:team",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:template_mirror",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "minecraft:template_rotation",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "minecraft:time",
+    "named": true,
+    "fields": {
+      "time": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "integer",
+            "named": true
+          }
+        ]
+      },
+      "unit": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "time_unit",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "minecraft:uuid",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "uuid",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "minecraft:vec2",
+    "named": true,
+    "fields": {
+      "x": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      },
+      "y": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "minecraft:vec3",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "vec3",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "msg_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:message",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "namespace",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "nbt_path",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "nbt_path_index",
+          "named": true
+        },
+        {
+          "type": "nbt_path_key",
+          "named": true
+        },
+        {
+          "type": "snbt_compound",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "nbt_path_index",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "snbt_compound",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "nbt_path_key",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        },
+        {
+          "type": "snbt_compound",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "op_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:game_profile",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "operation",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "pardon-ip_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pardon_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:game_profile",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "particle_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:float",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:particle",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec3",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "perf_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "place_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:float",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "minecraft:template_mirror",
+          "named": true
+        },
+        {
+          "type": "minecraft:template_rotation",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "playsound_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:float",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec3",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "publish_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "quoted_string",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "string_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "recipe_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "resource_location",
+    "named": true,
+    "fields": {
+      "id": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "id",
+            "named": true
+          }
+        ]
+      },
+      "namespace": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "namespace",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "rot_axis",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "decimal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "save-all_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "say_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:message",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "schedule_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:function",
+          "named": true
+        },
+        {
+          "type": "minecraft:time",
+          "named": true
+        },
+        {
+          "type": "remaining_string",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scoreboard_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:component",
+          "named": true
+        },
+        {
+          "type": "minecraft:objective",
+          "named": true
+        },
+        {
+          "type": "minecraft:objective_criteria",
+          "named": true
+        },
+        {
+          "type": "minecraft:operation",
+          "named": true
+        },
+        {
+          "type": "minecraft:score_holder",
+          "named": true
+        },
+        {
+          "type": "minecraft:scoreboard_slot",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        },
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setblock_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_state",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setidletimeout_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setworldspawn_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:angle",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "snbt_array",
+    "named": true,
+    "fields": {
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "snbt_array_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "snbt_number",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "snbt_array_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "snbt_compound",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "snbt_pair",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "snbt_false",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "snbt_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "literal_string",
+          "named": true
+        },
+        {
+          "type": "quoted_string",
+          "named": true
+        },
+        {
+          "type": "snbt_array",
+          "named": true
+        },
+        {
+          "type": "snbt_compound",
+          "named": true
+        },
+        {
+          "type": "snbt_false",
+          "named": true
+        },
+        {
+          "type": "snbt_list",
+          "named": true
+        },
+        {
+          "type": "snbt_number",
+          "named": true
+        },
+        {
+          "type": "snbt_true",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "snbt_pair",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "literal_string",
+            "named": true
+          },
+          {
+            "type": "quoted_string",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "literal_string",
+            "named": true
+          },
+          {
+            "type": "quoted_string",
+            "named": true
+          },
+          {
+            "type": "snbt_array",
+            "named": true
+          },
+          {
+            "type": "snbt_compound",
+            "named": true
+          },
+          {
+            "type": "snbt_false",
+            "named": true
+          },
+          {
+            "type": "snbt_list",
+            "named": true
+          },
+          {
+            "type": "snbt_number",
+            "named": true
+          },
+          {
+            "type": "snbt_true",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "snbt_true",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "spawnpoint_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:angle",
+          "named": true
+        },
+        {
+          "type": "minecraft:block_pos",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "spectate_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "spreadplayers_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:bool",
+          "named": true
+        },
+        {
+          "type": "brigadier:float",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec2",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "stopsound_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:resource_location",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string_content",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "escape_sequence",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "summon_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity_summon",
+          "named": true
+        },
+        {
+          "type": "minecraft:nbt_compound_tag",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec3",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tag_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        },
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "team_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:bool",
+          "named": true
+        },
+        {
+          "type": "minecraft:color",
+          "named": true
+        },
+        {
+          "type": "minecraft:component",
+          "named": true
+        },
+        {
+          "type": "minecraft:score_holder",
+          "named": true
+        },
+        {
+          "type": "minecraft:team",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        },
+        {
+          "type": "word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "teammsg_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:message",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "teleport_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity_anchor",
+          "named": true
+        },
+        {
+          "type": "minecraft:rotation",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec3",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tellraw_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:component",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "time_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:time",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "time_unit",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "title_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:component",
+          "named": true
+        },
+        {
+          "type": "minecraft:entity",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "trigger_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:objective",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "true",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "vec3",
+    "named": true,
+    "fields": {
+      "x": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      },
+      "y": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      },
+      "z": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "float_axis",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "weather_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "whitelist_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "minecraft:game_profile",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "worldborder_cmd",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "brigadier:double",
+          "named": true
+        },
+        {
+          "type": "brigadier:float",
+          "named": true
+        },
+        {
+          "type": "brigadier:integer",
+          "named": true
+        },
+        {
+          "type": "minecraft:vec2",
+          "named": true
+        },
+        {
+          "type": "subcommand",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "\"\"",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "%=",
+    "named": false
+  },
+  {
+    "type": "'",
+    "named": false
+  },
+  {
+    "type": "''",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "*=",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "+=",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "-=",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "..",
+    "named": false
+  },
+  {
+    "type": "/=",
+    "named": false
+  },
+  {
+    "type": "0",
+    "named": false
+  },
+  {
+    "type": "180",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": "><",
+    "named": false
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "B",
+    "named": false
+  },
+  {
+    "type": "E",
+    "named": false
+  },
+  {
+    "type": "I",
+    "named": false
+  },
+  {
+    "type": "L",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "\\",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "a",
+    "named": false
+  },
+  {
+    "type": "adventure",
+    "named": false
+  },
+  {
+    "type": "aqua",
+    "named": false
+  },
+  {
+    "type": "arbitrary",
+    "named": false
+  },
+  {
+    "type": "armor.chest",
+    "named": false
+  },
+  {
+    "type": "armor.feet",
+    "named": false
+  },
+  {
+    "type": "armor.head",
+    "named": false
+  },
+  {
+    "type": "armor.legs",
+    "named": false
+  },
+  {
+    "type": "belowName",
+    "named": false
+  },
+  {
+    "type": "black",
+    "named": false
+  },
+  {
+    "type": "blue",
+    "named": false
+  },
+  {
+    "type": "clockwise_90",
+    "named": false
+  },
+  {
+    "type": "command",
+    "named": true
+  },
+  {
+    "type": "container.",
+    "named": false
+  },
+  {
+    "type": "counterclockwise_90",
+    "named": false
+  },
+  {
+    "type": "creative",
+    "named": false
+  },
+  {
+    "type": "d",
+    "named": false
+  },
+  {
+    "type": "dark_aqua",
+    "named": false
+  },
+  {
+    "type": "dark_blue",
+    "named": false
+  },
+  {
+    "type": "dark_gray",
+    "named": false
+  },
+  {
+    "type": "dark_green",
+    "named": false
+  },
+  {
+    "type": "dark_purple",
+    "named": false
+  },
+  {
+    "type": "dark_red",
+    "named": false
+  },
+  {
+    "type": "decimal",
+    "named": true
+  },
+  {
+    "type": "e",
+    "named": false
+  },
+  {
+    "type": "enderchest.",
+    "named": false
+  },
+  {
+    "type": "entity_var_key",
+    "named": true
+  },
+  {
+    "type": "eyes",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "feet",
+    "named": false
+  },
+  {
+    "type": "front_back",
+    "named": false
+  },
+  {
+    "type": "furthest",
+    "named": false
+  },
+  {
+    "type": "gold",
+    "named": false
+  },
+  {
+    "type": "gray",
+    "named": false
+  },
+  {
+    "type": "green",
+    "named": false
+  },
+  {
+    "type": "horse.",
+    "named": false
+  },
+  {
+    "type": "horse.armor",
+    "named": false
+  },
+  {
+    "type": "horse.chest",
+    "named": false
+  },
+  {
+    "type": "horse.saddle",
+    "named": false
+  },
+  {
+    "type": "hotbar.",
+    "named": false
+  },
+  {
+    "type": "integer",
+    "named": true
+  },
+  {
+    "type": "inventory.",
+    "named": false
+  },
+  {
+    "type": "json_null",
+    "named": true
+  },
+  {
+    "type": "key",
+    "named": true
+  },
+  {
+    "type": "left_right",
+    "named": false
+  },
+  {
+    "type": "light_purple",
+    "named": false
+  },
+  {
+    "type": "list",
+    "named": false
+  },
+  {
+    "type": "minecraft:objective_criteria",
+    "named": true
+  },
+  {
+    "type": "nearest",
+    "named": false
+  },
+  {
+    "type": "none",
+    "named": false
+  },
+  {
+    "type": "objective",
+    "named": true
+  },
+  {
+    "type": "p",
+    "named": false
+  },
+  {
+    "type": "player_name",
+    "named": true
+  },
+  {
+    "type": "r",
+    "named": false
+  },
+  {
+    "type": "random",
+    "named": false
+  },
+  {
+    "type": "red",
+    "named": false
+  },
+  {
+    "type": "remaining_string",
+    "named": true
+  },
+  {
+    "type": "reset",
+    "named": false
+  },
+  {
+    "type": "s",
+    "named": false
+  },
+  {
+    "type": "sidebar",
+    "named": false
+  },
+  {
+    "type": "sidebar.team.",
+    "named": false
+  },
+  {
+    "type": "snbt_number",
+    "named": true
+  },
+  {
+    "type": "spectator",
+    "named": false
+  },
+  {
+    "type": "subcommand",
+    "named": true
+  },
+  {
+    "type": "survival",
+    "named": false
+  },
+  {
+    "type": "t",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "uuid",
+    "named": true
+  },
+  {
+    "type": "villager.",
+    "named": false
+  },
+  {
+    "type": "weapon",
+    "named": false
+  },
+  {
+    "type": "weapon.mainhand",
+    "named": false
+  },
+  {
+    "type": "weapon.offhand",
+    "named": false
+  },
+  {
+    "type": "white",
+    "named": false
+  },
+  {
+    "type": "word",
+    "named": true
+  },
+  {
+    "type": "xzy",
+    "named": false
+  },
+  {
+    "type": "yellow",
+    "named": false
+  },
+  {
+    "type": "yxz",
+    "named": false
+  },
+  {
+    "type": "zyx",
+    "named": false
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]
