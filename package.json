@@ -12,9 +12,6 @@
   ],
   "author": "IoeCmcomc",
   "license": "MIT",
-  "dependencies": {
-    "winston": "^3.8.1"
-  },
   "tree-sitter": [
     {
       "scope": "source.mcfunction",
@@ -22,5 +19,8 @@
         "mcfunction"
       ]
     }
-  ]
+  ],
+  "devDependencies": {
+    "winston": "^3.8.1"
+  }
 }
