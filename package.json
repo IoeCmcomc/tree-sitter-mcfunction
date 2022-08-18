@@ -1,0 +1,26 @@
+{
+  "name": "tree-sitter-mcfunction",
+  "version": "0.1.0",
+  "description": "Minecraft function file grammar for tree-sitter",
+  "main": "grammar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tree-sitter",
+    "parser"
+  ],
+  "author": "IoeCmcomc",
+  "license": "MIT",
+  "dependencies": {
+    "winston": "^3.8.1"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.mcfunction",
+      "file-types": [
+        "mcfunction"
+      ]
+    }
+  ]
+}
